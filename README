@@ -1,0 +1,27 @@
+**** SaveMyPrecious - Sauvegarde de fichiers ****
+Développé par J.RAIGNEAU - julien@raigneau.net
+
+SaveMyPrecious remplace "Saise":http://www.tifauve.net/Saise et permet donc une sauvegarde incrémentale totale (chaque sauvegarde se suffit à elle même) distante via l'utilisation de la commande cp -al et de rsync. Les principes de base sont expliqués sur la page de présentation d'"Obiran":http://www.tifauve.net/Obiran, le premier script de sauvegarde que j'ai écrit.
+
+A l'inverse de "Saise":http://www.tifauve.net/Saise, SaveMyPrecious ne crypte pas les données, mais subit une nette amélioration de l'interface graphique.
+
+** Dépendances
+
+Pour faire fonctionner SaveMyPrecious, il vous faut:
+* SaveMyPrecious
+* rsync
+* ssh
+* libraires python: [http://roscidus.com/desktop/node/336 pynotify] et pygtk
+
+** License
+
+SaveMyPrecious est sous "license apache v2.0":http://www.apache.org/licenses/LICENSE-2.0
+
+** Avertissement
+
+Le code est sans garantie et sans support!
+
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+

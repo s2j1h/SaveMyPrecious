@@ -1,0 +1,34 @@
+#Fichier de configuration pour SaveMyprecious
+
+#### CONFIGURATION HOTE DISTANT ####
+
+#Répertoire master côté backup (contient toutes les itérations) (ne pas mettre de / à la fin!)
+backupmasterdir: /home/fionna/backups/einstein
+
+#A propos de ssh
+ssh_destination: shrek
+ssh_user: fionna
+ssh_port: 22
+ssh_key: /home/tifauve/.ssh/id_rsa
+
+#### CONFIGURATION MACHINE A SAUVEGARDER
+
+#Répertoires à sauvegarder (ne pas mettre de / à la fin!)
+#CES REPERTOIRES NE SERONT PAS CRYPTES !
+dirs2backup: 
+    - /home/tifauve
+
+#### CONFIGURATION DES SAUVEGARDES
+
+#Nombre d'itérations à conserver
+iterations: 10
+
+#Répertoires et fichiers à ne pas sauvegarder
+#ATTENTION: comme indiqué dans le man de rsync, cela correspond à des motifs (pattern) et non à des répertoires
+excludedDirs:
+    - tmp
+    - VBOX
+    - PDF
+    
+####Configuration GUI (libnotify)
+notification: true
